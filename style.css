@@ -44,7 +44,7 @@ aside{
     display: flex;
     flex-direction: column;
     color: white;
-    padding: 60px;
+    
     flex: 1;
     height: auto;
     background-color: #1f0a1d;
@@ -101,6 +101,7 @@ h1{
     
     height: calc(100vh - 50px);
     margin-bottom: 5em;
+    padding: 20px 20px 20px 100px;
 }
 #nome-cor{
     color: #45936c;
@@ -115,6 +116,7 @@ h1{
     width: 50%;
     font-family: inter;
     font-size: large;
+    color: #828282;
 }
 
 #sobre-mim{
@@ -138,9 +140,9 @@ h1{
     display: flex;
     
     gap: 20px;
-    width: 100%;
+    width: calc(100% - 100px);
     margin-bottom: 10em;
-    
+    padding: 50px;
     
     flex-wrap: wrap;
 }
@@ -192,7 +194,7 @@ h1{
 }
 #contato{
     display: flex;
-    width: 100%;
+    padding: 20px 20px 100px 20px;
     justify-content: center;
     flex-wrap: wrap;
     gap: 50px;
