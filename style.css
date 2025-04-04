@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=ABeeZee:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
 /*
 roboto
 abeezee
@@ -15,7 +16,7 @@ html{
 
 main{
     display: flex;
-    background-color: aqua;
+    background-color: #334f53;
 }
 aside{
     position: fixed;
@@ -59,7 +60,7 @@ aside{
 
 }
 aside ul{
-    margin-top: 5em;
+    margin-top: 3em;
     font-family: inter;
     display: flex;
     flex-direction: column;
@@ -79,7 +80,7 @@ aside a{
 h1{
     margin-bottom: 20px;
     font-size: 30px;
-    font-family: abeezee;
+    font-family: DM Sans;
     text-align: center;
 }
 #inicio{
@@ -119,6 +120,7 @@ h1{
     width: 70%;
     font-family: inter;
     font-size: large;
+    margin-bottom: 10em;
 }
 
 #habilidades{
@@ -126,21 +128,79 @@ h1{
     
     gap: 20px;
     width: 100%;
-    align-items: flex-start;
-    justify-content: center;
+    margin-bottom: 10em;
+    
     
     flex-wrap: wrap;
 }
 #habilidades img{
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
+    filter: invert();
 }
 .box{
     display: flex;
+    flex: 1;
+    
     margin-bottom: 30px;
     flex-direction: column;
-    
+    gap: 20px;
     align-items: center;
     font-family: roboto;
-    font-size: larger;
+    font-size: 20px;
+}
+
+#projetos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10em;
+    gap: 24px;
+}
+.card-projeto{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #3e3433;
+    width: 15em;
+    padding: 10px;
+    height: auto;
+    border-radius: 20px 0px 20px 0px;
+    
+    
+}
+.card-projeto p{
+    font-family: inter;
+    text-align: center;
+}
+.card-projeto img{
+    width: 100%;
+    height: 250px;
+}
+#contato{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+.box-contato{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.2em;
+    font-family: abeezee;
+}
+.box-contato img{
+    cursor: pointer;
+    filter: invert(1);
+    width: 30px;
+    height: 30px;
+}
+.box-contato img:hover{
+   filter: invert(0);
+
 }
