@@ -16,7 +16,11 @@ html{
 
 main{
     display: flex;
-    background-color: #334f53;
+}
+#span-query{
+    display: none;
+    font-family: DM Sans;
+    font-size: large;
 }
 aside{
     position: fixed;
@@ -28,6 +32,12 @@ aside{
     width: 220px;
     padding: 25px;
     height: calc(100vh - 50px);
+}
+#menu{
+    display: none;
+    width: 40px;
+    height: 40px;
+    filter: invert(1);
 }
 #content{
     margin-left: 270px;
@@ -66,6 +76,7 @@ aside ul{
     flex-direction: column;
     gap: 50px;
     font-size: 22px;
+    list-style: none;
 }
 aside li:hover{
     text-decoration: underline;
@@ -203,4 +214,47 @@ h1{
 .box-contato img:hover{
    filter: invert(0);
 
+}
+@media only screen and (max-width: 800px) {
+    aside{
+        display: flex;
+        position: relative;
+        
+        width: 100%;
+        height: auto;
+    }
+    aside ul{
+        display: none;
+    }
+    aside{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% - 40px);
+        padding: 20px 20px 20px 20px;
+    }
+    #foto{
+        display: none;
+    }
+    #icones{
+        display: none;
+    }
+    #content{
+        margin-left: 0px;
+    }
+    main{
+        flex-direction: column;
+    }
+    #menu{
+        display: block;
+    }
+    #span-query{
+        display: block;
+    }
+    #inicio p{
+        width: 90%;
+    }
+    #sobre-mim p{
+        width: 90%;
+    }
 }
