@@ -18,6 +18,7 @@ main{
     background-color: aqua;
 }
 aside{
+    position: fixed;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -28,11 +29,13 @@ aside{
     height: calc(100vh - 50px);
 }
 #content{
+    margin-left: 270px;
     display: flex;
+    flex-direction: column;
     color: white;
-    padding: 25px;
+    padding: 60px;
     flex: 1;
-    height: calc(100vh - 50px);
+    height: auto;
     background-color: #1f0a1d;
 }
 
@@ -70,4 +73,74 @@ aside li:hover{
 aside a{
     text-decoration: none;
     color: white;
+}
+
+/* content */
+h1{
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-family: abeezee;
+    text-align: center;
+}
+#inicio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: calc(100vh - 50px);
+    margin-bottom: 5em;
+}
+#nome-cor{
+    color: #45936c;
+}
+#inicio h1, #inicio span{
+    margin-bottom: 0;
+    font-size: 50px;
+    font-family: abeezee;
+    text-align: start;
+}
+#inicio p{
+    width: 50%;
+    font-family: inter;
+    font-size: large;
+}
+
+#sobre-mim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 5em;
+
+   
+}
+
+#sobre-mim p{
+    text-align: center;
+    width: 70%;
+    font-family: inter;
+    font-size: large;
+}
+
+#habilidades{
+    display: flex;
+    
+    gap: 20px;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    
+    flex-wrap: wrap;
+}
+#habilidades img{
+    width: 100px;
+    height: 100px;
+}
+.box{
+    display: flex;
+    margin-bottom: 30px;
+    flex-direction: column;
+    
+    align-items: center;
+    font-family: roboto;
+    font-size: larger;
 }
